@@ -6,7 +6,7 @@ type Habilidades=[String]
 type Persona=(Edad,Suenios,Nombre,Felicidonios,Habilidades)
 
 laura :: Persona
-laura=(21,3,"Laura Hernandez",130,["Jugar al futbol","Mecanica","Tocar la bateria"])
+laura=(21,3,"Laura Hernandez",130,["Jugar al futbol","Mecanica","Tocar la bateria"])--EJEMPLO DE UNA PERSONA
 
 satisfaccion::(Int,Int,String,Int,[String])->Int
 satisfaccion (a,b,_,c,_)
