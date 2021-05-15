@@ -24,3 +24,17 @@ nombreLargo (_,_,a,_,_)=((>10).length) a
 suertuda=even.(*3).satisfaccion
 
 nombreLindo (_,_,a,_,_)= ((=='a').last) a
+
+recibirse::String->Persona->Persona
+recibirse carrera (a,b,c,d,e)=(a,b,c,d+1000,e ++ [carrera])
+
+viajar ciudad (a,b,c,d,e)
+    |ciudad=="bonus"=(a,b,c,d+100,e)
+    |otherwise=(a+1,b,c,d+100*length(ciudad),e)
+
+enamorarse (a,b,c,d,e) (_,_,_,f,_)= (a,b,c,d+f,e)
+
+comboPerfecto::Persona->Persona
+comboPerfecto persona=viajar "bonus" (recibirse "Medicina" (viajar "Paris" (viajar "Berazategui" persona)))
+
+queTodoSigaIgual= id
